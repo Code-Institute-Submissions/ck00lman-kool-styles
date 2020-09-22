@@ -61,6 +61,11 @@ body {
     padding-top: 5px;
 }
 
+.mylogo {
+    height: 135px;
+    width: 80%;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
