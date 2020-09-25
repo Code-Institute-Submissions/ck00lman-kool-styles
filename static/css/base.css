@@ -80,6 +80,31 @@ body {
     padding-top: 116px
 }
 
+.shop-now-button {
+    border-radius: 50px !important;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.mt-3, .my-3 {
+    margin-top: 6rem!important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 
 /* -------------------------------- Media Queries */
 
