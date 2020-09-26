@@ -3,17 +3,19 @@ from django.contrib import messages
 
 from .forms import OrderForm
 
+
 def checkout(request):
     bag = request.session.get('bag', {})
     if not bag:
-        messages.error(request, "There's nothing iny9ur bag at the moment")
+        messages.error(request, "There's nothing in your bag at the moment")
         return redirect(reverse('products'))
 
     order_form = OrderForm()
     template = 'checkout/checkout.html'
     context = {
-        'order_form' : order_form
-
+        'order_form': order_form,
+        'stripe_public_key': 'pk_test_51HVdTgKHRFR9CLSsRiI2IJzLvet4awcFy16g8zcJA9T6p6yzQ7qLYpNDRbZj9pQHI4VfHVmRtkKEIdurCPB9KTdE00UcZJEto7',
+        'client_secret': 'test client secret',
     }
 
     return render(request, template, context)
