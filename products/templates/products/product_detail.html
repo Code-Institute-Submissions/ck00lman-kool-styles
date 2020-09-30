@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load social_share %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -43,6 +44,10 @@
                             </a>
                         </p>
                     {% endif %}
+                        {% send_email <subject> <text_to_post> <object_or_url> <link_text> %}
+                        {% post_to_facebook <object_or_url> <link_text> %}
+                        {% post_to_twitter <text_to_post> <object_or_url> <link_text> %}
+                        {% post_to_whatsapp <object_or_url> <link_text> %}
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
