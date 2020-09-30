@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'django_social_share',
     'home',
     'products',
     'bag',
@@ -82,7 +81,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'django.template.context_processors.request',
                 'bag.contexts.bag_contents',
             ],
             'builtins': [
