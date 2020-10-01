@@ -39,7 +39,7 @@ def favorites_contents(request):
         delivery = 0
         free_delivery_delta = 0
     
-    grand_total = delivery + total
+    favorites_grand_total = delivery + total
     
     context = {
         'favorites_items': favorites_items,
@@ -48,7 +48,7 @@ def favorites_contents(request):
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
-        'grand_total': grand_total,
+        'favorites_grand_total': favorites_grand_total,
     }
 
     return context
