@@ -25,7 +25,7 @@ def add_to_favorites(request, item_id):
         if item_id in list(favorites.keys()):
             if size in favorites[item_id]['items_by_size'].keys():
                 favorites[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {favorites[item_id]["items_by_size"][size]}')
+                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {favorites[item_id]["items_by_size"][size]} from your favorites')
             else:
                 favorites[item_id]['items_by_size'][size] = quantity
                 messages.success(request, f'Added size {size.upper()} {product.name} to your favorites')
@@ -35,7 +35,7 @@ def add_to_favorites(request, item_id):
     else:
         if item_id in list(favorites.keys()):
             favorites[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {favorites[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to {favorites[item_id]} from your favorites')
         else:
             favorites[item_id] = quantity
             messages.success(request, f'Added {product.name} to your favorites')
@@ -57,7 +57,7 @@ def adjust_favorites(request, item_id):
     if size:
         if quantity > 0:
             favorites[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {favorites[item_id]["items_by_size"][size]}')
+            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {favorites[item_id]["items_by_size"][size]} from your favorites')
         else:
             del favorites[item_id]['items_by_size'][size]
             if not favorites[item_id]['items_by_size']:
@@ -66,7 +66,7 @@ def adjust_favorites(request, item_id):
     else:
         if quantity > 0:
             favorites[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {favorites[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to {favorites[item_id]} from your favorites')
         else:
             favorites.pop(item_id)
             messages.success(request, f'Removed {product.name} from your favorites')
@@ -98,5 +98,5 @@ def remove_from_favorites(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
+        messages.error(request, f'Error removing item: {e} from your favorites')
         return HttpResponse(status=500)
