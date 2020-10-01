@@ -83,7 +83,7 @@
                                                     {% endif %}
                                                 </div>
                                             </div>
-                                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" onclick="javascript: form.action='{% url 'add_to_bag' product.id %}'" value="Add to Bag">
+                                            <!-- <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" onclick="javascript: form.action='{% url 'add_to_bag' product.id %}'" value="Add to Bag"> -->
                                         </form>
                                         <a class="update-link text-info"><small>Update</small></a>
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
