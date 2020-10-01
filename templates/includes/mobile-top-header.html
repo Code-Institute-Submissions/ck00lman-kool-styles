@@ -33,7 +33,7 @@
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_favorites' %}"><i class="fas fa-heart fa-lg"></i>Favorites</a>
+            <a class="{% if favorites_grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_favorites' %}"><i class="fas fa-heart"></i>&nbsp;Favorites</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
