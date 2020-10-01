@@ -44,7 +44,7 @@ def favorites_contents(request):
     context = {
         'favorites_items': favorites_items,
         'favorites_total': total,
-        'product_count': product_count,
+        'favorites_product_count': product_count,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
