@@ -85,6 +85,7 @@
                         <a class="{% if favorites_grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_favorites' %}">
                             <div class="text-center">
                                 <p class="my-0">
+                                <div><i class="fas fa-heart fa-lg"></i></div>
                                     {% if favorites_grand_total %}
                                         ${{ favorites_grand_total|floatformat:2 }}
                                     {% else %}
