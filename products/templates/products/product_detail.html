@@ -106,8 +106,8 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" formaction="{% url 'add_to_bag' product.id %}" value="Add to Bag">
-                                <input type="submit" class="btn btn-danger rounded-0 text-uppercase mt-5" formaction="{% url 'add_to_favorites' product.id %}" value="Add to Favorites">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" formaction="/{% url 'add_to_bag' product.id %}" value="Add to Bag">
+                                <input type="submit" class="btn btn-danger rounded-0 text-uppercase mt-5" formaction="/{% url 'add_to_favorites' product.id %}" value="Add to Favorites">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
