@@ -43,7 +43,7 @@ def favorites_contents(request):
     
     context = {
         'favorites_items': favorites_items,
-        'total': total,
+        'favorites_total': total,
         'product_count': product_count,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
