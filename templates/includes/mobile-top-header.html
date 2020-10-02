@@ -34,8 +34,7 @@
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a class="{% if favorites_grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_favorites' %}">
-            <span class="fa-stack1 has-badge" data-count="{{ favorites_product_count }}">
-                <i class="fas fa-heart"></i></span>Favorites</a>
+                <i class="fas fa-heart"></i>&nbsp;Favorites ({{ favorites_product_count }})</a>
             
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
