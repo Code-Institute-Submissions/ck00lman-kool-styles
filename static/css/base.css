@@ -307,6 +307,21 @@ input[name='q']::placeholder {
     font-weight: bold;
 }
 
+.fa-stack1[data-count]:after {
+    position: absolute;
+    right: none;
+    top: 1%;
+    content: attr(data-count);
+    font-size: 45%;
+    padding: .6em;
+    border-radius: 999px;
+    line-height: .95em;
+    color: white;
+    background: rgba(255,0,0,.99);
+    text-align: center;
+    min-width: 2em;
+    font-weight: bold;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
