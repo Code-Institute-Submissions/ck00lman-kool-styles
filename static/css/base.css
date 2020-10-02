@@ -36,7 +36,6 @@ body {
 .btn-black {
     background: white;
     color: black;
-    border-radius: 25px !important;
 }
 
 .shop-now-button:hover,
@@ -48,11 +47,14 @@ body {
     background: #222;
     color: white;
 }
+.input-group>.custom-select:not(:last-child), 
+.input-group>.form-control:not(:last-child) {
+    border-radius: 25px;
+}
 
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
     border-radius: 25px !important;
 }
 
