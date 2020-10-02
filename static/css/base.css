@@ -293,7 +293,7 @@ input[name='q']::placeholder {
 
 .fa-stack[data-count]:after {
     position: absolute;
-    right: -25%;
+    right: 0%;
     top: 1%;
     content: attr(data-count);
     font-size: 45%;
