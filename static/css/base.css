@@ -291,20 +291,20 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-.fa-stack[data-count]:after{
-  position:absolute;
-  right:0%;
-  top:1%;
-  content: attr(data-count);
-  font-size:30%;
-  padding:.6em;
-  border-radius:999px;
-  line-height:.75em;
-  color: white;
-  background:rgba(255,0,0,.99);
-  text-align:center;
-  min-width:2em;
-  font-weight:bold;
+.fa-stack[data-count]:after {
+    position: absolute;
+    right: -25%;
+    top: 1%;
+    content: attr(data-count);
+    font-size: 45%;
+    padding: .6em;
+    border-radius: 999px;
+    line-height: .95em;
+    color: white;
+    background: rgba(255,0,0,.99);
+    text-align: center;
+    min-width: 2em;
+    font-weight: bold;
 }
 
 

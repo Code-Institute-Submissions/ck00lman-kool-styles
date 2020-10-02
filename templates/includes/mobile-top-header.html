@@ -33,7 +33,10 @@
                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a class="{% if favorites_grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_favorites' %}"><i class="fas fa-heart"></i>&nbsp;Favorites</a>
+            <a class="{% if favorites_grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_favorites' %}">
+            <span class="fa-stack has-badge" data-count="{{ favorites_product_count }}">
+                <i class="fas fa-heart"></i></span>&nbsp;Favorites</a>
+            
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -42,9 +45,13 @@
     </div>
 </li>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
-        <div class="text-center">
-            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+    <div class="text-center">
+        <div>
+            <span class="fa-stack has-badge" data-count="{{ product_count }}">
+                <i class="fas fa-shopping-bag fa-lg"></i>
+            </span>
+        </div>
             <p class="my-0">
                 {% if grand_total %}
                     ${{ grand_total|floatformat:2 }}
