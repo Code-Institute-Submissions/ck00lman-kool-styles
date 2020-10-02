@@ -38,6 +38,13 @@ body {
     color: black;
 }
 
+/* Edit Option */
+.edit {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 /* Filter Option */
 
 .rounded-0 {
