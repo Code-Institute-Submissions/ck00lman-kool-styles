@@ -24,7 +24,11 @@
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
-            <p class="my-0">My Account</p>
+            {% if request.user.is_authenticated  %}
+                <p class="my-0">Hi, {{request.user}}</p>
+            {% else %}
+                <p class="my-0">Welcome Guest</p>
+            {% endif %}
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -45,13 +49,11 @@
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
         <div class="text-center">
             <div>
-                <span class="fa-stack has-badge" data-count="{{ product_count }}">
-                    <i class="fas fa-shopping-bag fa-lg"></i>
-                </span>
+                <i class="fas fa-shopping-bag fa-lg"></i>
             </div>
             <p class="my-0">
                 {% if grand_total %}
-                    ${{ grand_total|floatformat:2 }}
+                    ${{ grand_total|floatformat:2 }}({{ product_count }})
                 {% else %}
                     $0.00
                 {% endif %}
