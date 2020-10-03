@@ -38,6 +38,10 @@ body {
     color: black;
 }
 
+.btn-black1 {
+    background: black !important;
+    color: white !important;
+}
 .btn-black1:hover {
     background: darkmagenta !important;
     color: white !important;
