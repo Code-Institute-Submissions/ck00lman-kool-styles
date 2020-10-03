@@ -1,0 +1,64 @@
+[{
+	"pk": 1,
+	"model": "products.brand",
+	"fields": {
+		"name": "polo_styles",
+		"friendly_name": "Polo Styles"
+	}
+}, {
+	"pk": 2,
+	"model": "products.brand",
+	"fields": {
+		"name": "bed_bath_beyond",
+		"friendly_name": "Bed, Bath & Beyond"
+	}
+}, {
+	"pk": 3,
+	"model": "products.brand",
+	"fields": {
+		"name": "kitchen_aid",
+		"friendly_name": "kitchen_aid"
+	}
+}, {
+	"pk": 4,
+	"model": "products.brand",
+	"fields": {
+		"name": "formal",
+		"friendly_name": "Formal"
+	}
+}, {
+	"pk": 5,
+	"model": "products.brand",
+	"fields": {
+		"name": "must_style",
+		"friendly_name": "Must Style"
+	}
+}, {
+	"pk": 6,
+	"model": "products.brand",
+	"fields": {
+		"name": "levi_style",
+		"friendly_name": "Levi Style"
+	}
+}, {
+	"pk": 7,
+	"model": "products.brand",
+	"fields": {
+		"name": "kool",
+		"friendly_name": "Kool"
+	}
+}, {
+	"pk": 8,
+	"model": "products.brand",
+	"fields": {
+		"name": "in_style",
+		"friendly_name": "In Style"
+	}
+}, {
+	"pk": 9,
+	"model": "products.brand",
+	"fields": {
+		"name": "all_styles",
+		"friendly_name": "All Styles"
+	}
+}]

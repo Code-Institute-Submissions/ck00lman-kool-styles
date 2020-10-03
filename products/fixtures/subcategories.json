@@ -1,0 +1,64 @@
+[{
+	"pk": 1,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "out_door",
+		"friendly_name": "Outdoor"
+	}
+}, {
+	"pk": 2,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "bedding",
+		"friendly_name": "Bedding"
+	}
+}, {
+	"pk": 3,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "bath",
+		"friendly_name": "Bath"
+	}
+}, {
+	"pk": 4,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "kitchen",
+		"friendly_name": "Kitchen"
+	}
+}, {
+	"pk": 5,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "formal",
+		"friendly_name": "Formal"
+	}
+}, {
+	"pk": 6,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "casual",
+		"friendly_name": "Casual"
+	}
+}, {
+	"pk": 7,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "dining",
+		"friendly_name": "Dining"
+	}
+}, {
+	"pk": 8,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "indoor",
+		"friendly_name": "In Door"
+	}
+}, {
+	"pk": 9,
+	"model": "products.subcategory",
+	"fields": {
+		"name": "t_shirts",
+		"friendly_name": "T-Shirts"
+	}
+}]

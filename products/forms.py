@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category
+from .models import Product, Category, Subcategory, Brand
 
 
 class ProductForm(forms.ModelForm):
@@ -18,4 +18,22 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
+            field.widget.attrs['class'] = 'border-black rounded-pill'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        subcategories = Subcategory.objects.all()
+        friendly_names = [(c.id, c.get_friendly_name()) for s in subcategories]
+
+        self.fields['subcategory'].choices = friendly_names
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'border-danger rounded-pill'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        brands = Brands.objects.all()
+        friendly_names = [(c.id, c.get_friendly_name()) for b in brands]
+
+        self.fields['brand'].choices = friendly_names
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'border-success rounded-pill'
