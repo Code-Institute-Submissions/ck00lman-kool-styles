@@ -23,7 +23,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         subcategories = Subcategory.objects.all()
-        friendly_names = [(c.id, c.get_friendly_name()) for s in subcategories]
+        friendly_names = [(s.id, s.get_friendly_name()) for s in subcategories]
 
         self.fields['subcategory'].choices = friendly_names
         for field_name, field in self.fields.items():
@@ -32,7 +32,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         brands = Brand.objects.all()
-        friendly_names = [(c.id, c.get_friendly_name()) for b in brands]
+        friendly_names = [(b.id, b.get_friendly_name()) for b in brands]
 
         self.fields['brand'].choices = friendly_names
         for field_name, field in self.fields.items():
