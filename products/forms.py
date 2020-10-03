@@ -18,7 +18,7 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-pill'
+            field.widget.attrs['class'] = 'border-black rounded-0'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -27,7 +27,7 @@ class ProductForm(forms.ModelForm):
 
         self.fields['subcategory'].choices = friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-danger rounded-pill'
+            field.widget.attrs['class'] = 'border-black rounded-0'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -36,4 +36,4 @@ class ProductForm(forms.ModelForm):
 
         self.fields['brand'].choices = friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-success rounded-pill'
+            field.widget.attrs['class'] = 'border-black rounded-0'
