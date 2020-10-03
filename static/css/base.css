@@ -38,6 +38,11 @@ body {
     color: black;
 }
 
+.btn-black1 {
+    background: black;
+    color: white;
+}
+
 /* Cards */
 .card{
     border-radius: 4px;
