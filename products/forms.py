@@ -31,7 +31,7 @@ class ProductForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        brands = Brands.objects.all()
+        brands = Brand.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for b in brands]
 
         self.fields['brand'].choices = friendly_names
