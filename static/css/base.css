@@ -38,9 +38,9 @@ body {
     color: black;
 }
 
-.btn-black1 {
-    background: black;
-    color: white;
+.btn-black1:hover {
+    background: darkmagenta !important;
+    color: white !important;
 }
 
 /* Cards */
