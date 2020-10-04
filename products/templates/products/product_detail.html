@@ -39,7 +39,7 @@
                     {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}|{% if product.subcategory %}{{ product.subcategory.friendly_name }}{% endif %} 
+                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }} | {% if product.subcategory %}{{ product.subcategory.friendly_name }}{% endif %} 
                             </a>
                         </p>
                     {% endif %}
