@@ -22,6 +22,11 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    width: auto;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 }
 
 .main-logo-link {
