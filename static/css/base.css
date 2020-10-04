@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    /*background: url('/media/bghome1.png') no-repeat center center fixed;*/
+    background: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/tie_background.jpg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -469,12 +469,12 @@ footer .quick-links {
 }
 
 /* Jumbotron */
-
-.jumbotron {
+/* 
+.jumbotronStyle {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-image: url(https://kool-styles.s3.us-east-2.amazonaws.com/media/tie_background.jpg);
+    background-image: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/tie_background.jpg');
     border-radius: .3rem;
     height: 70%;
     filter: brightness(0.5);
-} 
+}  */
