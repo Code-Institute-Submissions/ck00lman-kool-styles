@@ -68,8 +68,9 @@
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
+                    <br>
                     <p><strong>Description:</strong></p>
-                    <p class="mt-3">{{ product.description }}</p>
+                    <p>{{ product.description }}</p>
                     <form class="form" name="form" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
