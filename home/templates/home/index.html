@@ -15,114 +15,15 @@
 {% endblock %}
 
 {% block content %}
-<div class="MySliderView container-fluid no-side-padding">
-  <div id="contentContainer">
-    <div id="wrapper">
-      <div class="content">
-        <div class="left col-md-8 col-sm-12 MySliderView1"></div>
-        <div class="right col-md-4 hidden-sm-down">
-          <h2 class="slider-header"><a href="#">REGISTER NOW!!</a></h2>
-          <p class="info-tag">Register now and enjoy with more Style!!</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="left col-md-8 col-sm-12 MySliderView2"></div>
-        <div class="right col-md-4 hidden-sm-down">
-          <h2 class="slider-header"><a href="#">BROWSE OUR STYLES</a></h2>
-          <p class="info-tag">Browse through our store and find your next Style!</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="left col-md-8 col-sm-12 MySliderView3"></div>
-        <div class="right col-md-4 hidden-sm-down">
-          <h2 class="slider-header"><a href="#">Let's TIE that KNOT!!</a></h2>
-          <p class="info-tag">Looking for The Tie for That Special Ocassion?</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="left col-md-8 col-sm-12 MySliderView4"></div>
-        <div class="right col-md-4 hidden-sm-down">
-          <h2 class="slider-header"><a href="#">KOOL JACKETS</a></h2>
-          <p class="info-tag">Colorful, Fun, Fit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="navSliderLinks">
-    <ul>
-      <li class="sliderLinks">1</li>
-      <li class="sliderLinks">2</li>
-      <li class="sliderLinks">3</li>
-      <li class="sliderLinks">4</li>
-    </ul>
-  </div>
+<div class="jumbotron">
+  <h1 class="display-4">Kool Styles</h1>
+  <p class="lead">Formal, Casual, Fun, Fine, Nice.... It's All About Style!!</p>
+  <hr class="my-4">
+  <p>We have a variety of option for your particular Style.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg rounded-pill" href="#" role="button">Shop Styles</a>
+  </p>
 </div>
 {% endblock %}
 
-{% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-        var links = document.querySelectorAll(".sliderLinks");
-        var wrapper = document.querySelector("#wrapper");
-
-        // Shows the Sliderlink that is currently active/showing
-        var activeSliderLink = 0;
-
-        for (var i = 0; i < links.length; i++) {
-        var link = links[i];
-        link.addEventListener("click", setClickedItem, false);
-
-        //
-        link.itemID = i;
-        }
-
-        // Assign the first Slider Link as active
-        links[activeLink].classList.add("active");
-
-        function setClickedItem(e) {
-        removeActiveLinks();
-
-        var clickedLink = e.target;
-        activeLink = clickedLink.itemID;
-
-        changePosition(clickedLink);
-        }
-
-        function removeActiveLinks() {
-        for (var i = 0; i < links.length; i++) {
-            links[i].classList.remove("active");
-        }
-        }
-
-        // Switching Slider Position and showing active Slider Link
-        function changePosition(link) {
-        var position = link.getAttribute("data-pos");
-        var newPos = "-" + (100 / links.length) * link.itemID + "%";
-
-        var translateValue = "translate3d(" + newPos + ", 0px, 0)";
-        wrapper.style[transformProperty] = translateValue;
-
-        link.classList.add("active");
-        }
-
-        var transforms = [
-        "transform",
-        "msTransform",
-        "webkitTransform",
-        "mozTransform",
-        "oTransform",
-        ];
-
-        var transformProperty = getSupportedPropertyName(transforms);
-
-        function getSupportedPropertyName(properties) {
-        for (var i = 0; i < properties.length; i++) {
-            if (typeof document.body.style[properties[i]] != "undefined") {
-            return properties[i];
-            }
-        }
-        return null;
-        }
-    </script>
-{% endblock %}
 
