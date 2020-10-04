@@ -17,7 +17,7 @@
                 <h2 class="logo-font">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-pill border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
@@ -38,6 +38,8 @@
                                 <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
                                 <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
                                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                                <option value="brand_asc" {% if current_sorting == 'brand_asc' %}selected{% endif %}>Brand (A-Z)</option>
+                                <option value="brand_desc" {% if current_sorting == 'brand_desc' %}selected{% endif %}>Brand (Z-A)</option>
                             </select>
                         </div>
                     </div>
