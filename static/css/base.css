@@ -6,8 +6,8 @@ body {
     background: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/bghome1.png') no-repeat center center fixed;
     background-size: cover;
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* fixes issue of footer not being responsive */
+    flex-direction: column; /* fixes issue of footer not being responsive */
     color: #555;
     font-family: "Helvetica Neue", Helvetica, sans-serif !important;
 }
@@ -16,7 +16,7 @@ body {
     font-size: 6.5rem;
     font-weight: 300;
     line-height: 1.2;
-    margin-top: 18rem;
+    margin-top: 18rem; /* fixes issue with text going behind header */
 }
 
 /* from Bulma */
@@ -472,7 +472,7 @@ footer .quick-links {
 
     .display-4.logo-font.text-black {
         font-size: 3rem;
-        margin-top: -2rem;
+        margin-top: 2rem;
     }
 
     .nav-link {
