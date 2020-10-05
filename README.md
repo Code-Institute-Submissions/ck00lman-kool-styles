@@ -183,7 +183,8 @@ d. How to programmatically setup the database via Django:
 $ python3 manage.py migrate
 ```
 d. Creating migration files for the database, running this command will illustrate the actions that will be taking place:
-```console $ python3 manage.py makemigrations --dry-run
+```console
+$ python3 manage.py makemigrations --dry-run
 ```
 f. Creating migration files for the database:
 ```console
