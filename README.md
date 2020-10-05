@@ -44,7 +44,7 @@ Staff: A staff is able to login to the [Admin Dashboard](https://kool-styles.her
 6. A user should see immediately what product they have just added to their shopping bag, what they've removed, total product count and the grand total.
 
 ## Wireframes
-The wireframes for this project can be found [here](https://github.com/Oraclebun/ci-fullstack-project4/blob/master/documents/Project4_Wireframe.pdf).
+The wireframes for this project can be found [here](https://github.com/ck00lman/kool-styles/blob/master/wireframes.pdf).
 
 ## Kool Styles Functionalities & Features (Home Page)
 * Navigation Bar
