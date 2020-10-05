@@ -5,7 +5,9 @@ html {
 body {
     background: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/tie_background.jpg') no-repeat center center fixed;*/
     background-size: cover;
-    height: calc(100vh - 164px);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     color: #555;
     font-family: "Helvetica Neue", Helvetica, sans-serif !important;
 }
@@ -364,10 +366,8 @@ a:hover {
 footer {
   padding: 2rem 0;
   background-color: #212529;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
+  margin-top: auto;
+
 }
 
 .footer-column:not(:first-child) {
@@ -510,6 +510,10 @@ footer .quick-links {
     }
 }
 
+.row.fullview {
+    padding-bottom: 
+
+}
 /* Jumbotron */
 /* 
 .jumbotronStyle {
