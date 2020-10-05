@@ -157,17 +157,13 @@ It challenged me so I can understand the process of adding additional option aft
 #### Devices tested on included:
 
 As the most important approach being Mobile First Approach, it was important to test the responsiveness on different devices and browser simulators.
-Website used for testing responsivenes [Am I Responsive ?](http://ami.responsivedesign.is/#)
 
 - iPhone 6, 7, 8, X, XS, XS Max
 - Samusng Galaxy S5, S9, S9+
 - Goole Pixel 2, 2XL
 - iPad, iPad Mini, iPad Air, iPad Pro
 
-Overall responsiveness is to my satisfaction. (See image below for cross device responsiveness)
-
-![N|Solid](https://www.linkpicture.com/q/crossdevicetesting.png)
-
+Overall responsiveness is to my satisfaction.
 
 #### Code Validation
 Good Coding Practice Requires that all codes are validated through online validators, in order to check if there are errors.
