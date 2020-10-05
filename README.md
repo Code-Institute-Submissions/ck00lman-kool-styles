@@ -1,7 +1,8 @@
 
-# Code Institute Full Stack Frameworks with Django
+# Full Stack with Django Milestone Project - [Kool Styles](https://kool-styles.herokuapp.com/)
+Developed by: Christopher Koolman
 
-# Welcome to Kool Style E-Commerce Website
+![N|Solid](https://www.linkpicture.com/q/kool-style.png)
 
 ## Project Objectives
 This ecommerce website provides and facilitates user with shopping for any trending and/or variety of Styles they might be looking for. 
@@ -147,9 +148,32 @@ The database used in the project is PostgreSQL from the Heroku Platform Resource
 Due to unforseen circumstances I was only able to test the project manually. I tested all apps for User Based Experience, Customer Journey and Admin/Staff CRUD functionalities.
 
 ## Project challenges.
-In this project I learned alot in a short time span. I was challenged and decided to take the challenge and add additional funcitonalities and styling to Code Institute's "Boutique Ado" Project. It might look very similar,however I managed to understand how to use Python as a Server Side Language, PostgreSQL and Django. The most successful achievements were connecting to AWS, adding Stripe Payment option and Deploying to Heroku.
+In this project I learned alot in a short time span. Having a short time span to learn and complete the module, I decided to take the challenge and add additional funcitonalities and styling to Code Institute's "Boutique Ado" Project while I was learning to work with Django. It might look very similar,however I managed to understand how to use Python as a Server Side Language, PostgreSQL and Django. The most successful achievements were connecting to AWS, adding Stripe Payment option and Deploying to Heroku.
+
+## Testing
+I was able to successfully follow the Django Mondule and add the Fixtures and Data provided by Code Institute. However, I decided to add 2 New Product Attributes/Variations "Subcategories and Brands". I wanted to see what difficulties I might encounter by adding these afterwards. 
+It challenged me so I can understand the process of adding additional option after migrating. I included the steps in the deployment process so anyone can follow and successfully add these after. The one challenge I had was, afterwads I had to manually update the products. But, overall I'm happy with the outcome.
+
+#### Devices tested on included:
+
+As the most important approach being Mobile First Approach, it was important to test the responsiveness on different devices and browser simulators.
+Website used for testing responsivenes [Am I Responsive ?](http://ami.responsivedesign.is/#)
+
+- iPhone 6, 7, 8, X, XS, XS Max
+- Samusng Galaxy S5, S9, S9+
+- Goole Pixel 2, 2XL
+- iPad, iPad Mini, iPad Air, iPad Pro
+
+Overall responsiveness is to my satisfaction. (See image below for cross device responsiveness)
+
+![N|Solid](https://www.linkpicture.com/q/crossdevicetesting.png)
 
 
+#### Code Validation
+Good Coding Practice Requires that all codes are validated through online validators, in order to check if there are errors.
+- [The W3C CSS Validation Service](jigsawjigsaw.w3.org)
+- [The W3C Markup Validation Service](validator.w3.org)
+- [pep8online](http://pep8online.com) - for Python
 ## Deployment
 ### Running the project locally.
 The project was developed in GitPod.
