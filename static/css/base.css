@@ -12,6 +12,12 @@ body {
     font-family: "Helvetica Neue", Helvetica, sans-serif !important;
 }
 
+.display-4 {
+    font-size: 6.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 18rem;
+}
 
 /* from Bulma */
 .icon {
@@ -465,7 +471,8 @@ footer .quick-links {
     }
 
     .display-4.logo-font.text-black {
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-top: -2rem;
     }
 
     .nav-link {
