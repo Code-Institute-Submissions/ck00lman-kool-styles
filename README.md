@@ -357,13 +357,13 @@ $ python3 manage.py migrate
 
 
 ### Data
-1. Code Institute "Boutique Ado" Fixture Files. 
+Code Institute "Boutique Ado" Fixture Files. 
 
 ## Design Ideas and Credit
-1. The Design Ideas and Code are orginally from Code Institute "Boutique Ado", I have customized the code by following the complete module and as requested within the requirements I have included multiple models to be in compliance.
+The Design Ideas and Code are orginally from Code Institute "Boutique Ado", I have customized the code by following the complete module and as requested within the requirements I have included multiple models to be in compliance.
 
 ## README Documentation Guide
-1. In order to have a good README structure, I followed Developer [Oraclebun's](https://github.com/Oraclebun/ci-fullstack-project4/blob/master/README.md) and [Bad Gandalf](https://github.com/Bad-Gandalf/milestone-5-rick-will-fix-it/blob/master/README.md) as a guide.
+In order to have a good README structure, I followed Developer [Oraclebun's](https://github.com/Oraclebun/ci-fullstack-project4/blob/master/README.md) and [Bad Gandalf](https://github.com/Bad-Gandalf/milestone-5-rick-will-fix-it/blob/master/README.md) as a guide.
 
 ## Disclaimer
 Any content but limited to such as images, information used in this project/website is purely for educational purpose.
