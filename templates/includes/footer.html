@@ -7,13 +7,13 @@
             <span class="footer-title text-uppercase">Categories</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Clothing</a>
+            <a class="nav-link" href="{% url 'products' %}?category=activewear,essentials,jeans,shirts">Clothing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Homeware</a>
+            <a class="nav-link" href="{% url 'products' %}?category=bed_bath,kitchen_dining">Homeware</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Special Offers</a>
+            <a class="nav-link" href="{% url 'products' %}?category=new_arrivals,deals,clearance">Special Offers</a>
           </li>
         </ul>
       </div>
