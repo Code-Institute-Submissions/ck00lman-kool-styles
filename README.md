@@ -12,7 +12,7 @@ Product(s) include but are not limited to clothing, home decor, kitchen essentia
 The Kool Styles Website is available [here](https://kool-styles.herokuapp.com/)
 
 ## User Exprience & User Interface
-The color scheme I used was adopted from the mini project "Boutique Ado", however I've customized it by adding a "Dark Magenta" color scheme, so the user would have an enjoyable and colorful UI. on this website is chosen to be bright and cheery to give customers a bright and cheerful experience when they shop. The font selection of `font-family: "Helvetica Neue", Helvetica, sans-serif;` has maintained a modern/classic look in order to facilitate legibility.
+The color scheme I used was adopted from the mini project "Boutique Ado", however I've customized it by adding a "Dark Magenta" color scheme, so the user would have an enjoyable and colorful UI. The font selection of `font-family: "Helvetica Neue", Helvetica, sans-serif;` has maintained a modern/classic look in order to facilitate legibility.
 
 ### User and Staff Accounts for quick access:
 > Staff  
@@ -144,7 +144,7 @@ registration, account management as well as 3rd party (social) account authentic
 The database used in the project is PostgreSQL from the Heroku Platform Resources. PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
 
 ## Testing
-Due to unforseen circumstances I was only able to test the project manually. I tested  
+Due to unforseen circumstances I was only able to test the project manually. I tested all apps for User Based Experience, Customer Journey and Admin/Staff CRUD functionalities.
 
 ## Project challenges.
 In this project I learned alot in a short time span. I was challenged and decided to take the challenge and add additional funcitonalities and styling to Code Institute's "Boutique Ado" Project. It might look very similar,however I managed to understand how to use Python as a Server Side Language, PostgreSQL and Django. The most successful achievements were connecting to AWS, adding Stripe Payment option and Deploying to Heroku.
@@ -270,17 +270,17 @@ $ git remote -v
 ```
 
 6. Create a Procfile with the content "web gunicorn `<name of the project>`.wsgi:application
-8. Update the allowed host in settings.py to the newly created heroku app domain name.
+7. Update the allowed host in settings.py to the newly created heroku app domain name.
 ```ALLOWED_HOSTS = ['<name of the project>.herokuapp.com', 'localhost']
 ```
-9. Freeze all project dependencies by keying in to the terminal 
+8. Freeze all project dependencies by keying in to the terminal 
 
 ```console
 $ pip3 freeze --local > requirements.txt 
 ```
-10. Add STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+9. Add STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-11. Finally push the project to git as below:
+10. Finally push the project to git as below:
 
 ```console
 $ git add.
@@ -288,7 +288,8 @@ $ git commit -m <deployment message>
 $ git push heroku master
 ```
 
-## Setting Up the Database for Production.
+## Setting Up the Database for Production
+
 1. Add import dj_database_url to settings.py
 2. Change the databases setting in settings.py to get the default database url from env variable as below:
 ```
@@ -300,17 +301,12 @@ $ python3 manage.py migrate
 ```
 4. It is important to setup a superuser account and populate the database data within the sequence described in section "Running the project locally
 12c-12k."
+
 5. Do NOT forget to set the following environment variables:
  - create file env.py in the main folder of the app or you can set them up in your Heroku App Dashboard Settings
  - set variables for  EMAIL_PASSWORD, EMAIL_ADRESS, SECRET_KEY, STRIPE_PUBLISHABLE_KEY, STRIPE_SECRET_KEY, STRIPE_WH_KEY, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and HOSTNAME
-
-
-## Persisting Bugs
-
-
+ 
 ## Acknowledgements and Credits
-### Images
-## Credits
 
 * Google Fonts: https://fonts.google.com
 * Materializecss: https://materializecss.com
@@ -341,7 +337,7 @@ $ python3 manage.py migrate
 1. Code Institute "Boutique Ado" Fixture Files. 
 
 ## Design Ideas
-1. The Design Ideas are orginally from Code Institute "Boutique Ado". 
+1. The Design Ideas are orginally from Code Institute "Boutique Ado", as requested within the requirements I have included multiple models to be in compliance.
 
 ## README Documentation Guide
 1. In order to have a good README structure, I followed Developer [Oraclebun's](https://github.com/Oraclebun/ci-fullstack-project4/blob/master/README.md) and [Bad Gandalf](https://github.com/Bad-Gandalf/milestone-5-rick-will-fix-it/blob/master/README.md) as a guide.
