@@ -61,7 +61,7 @@ pages and also the shopping cart page.
 c. Features that allow users to view shopping bag and favorites.
 * On the right of the navigation bar, there is a favorites and a shopping bag icon which navigates to the user's favorites or shopping cart contents.
 
-### Products page
+### Products Page
 Search Feature
 * On the products page the user will be able to filter the products (Ascending or Descending) based on:
 - Price
@@ -76,6 +76,19 @@ Cards Display
 Permission Based Features
 * If the user is logged in as a superuser/staff or has permissions to perform CRUD functions, the user would be able to see
 the edit or delete a product.
+
+### Products Detail Page
+* On the product detail page the user will be able to see the product details such as:
+- Name
+- Category | Subcategory
+- Brand
+- Rating
+- Edit | Delete
+- Description
+- Size (If product has size attribute)
+- Quantity - and + for decreasing or increasing the quantity
+- Add to Bag
+- Add to Favorites
 
 ### User Account Management Page
 * The account management pages are fully managed by Django-AllAuth
@@ -96,7 +109,7 @@ Favorites Feature(s)
 
 ### NavBar & Footer
 Navigation Bar 
-* On the navigation bar and footer, when a relevant link is selected the user is redirected to the assiged `href`url.
+* On the navigation bar and footer, when a relevant link (in the footer related to the navigation bar) is selected the user is redirected to the assiged `href`url. 
 
 ## Technologies Used
 The technologies used for this project are:
@@ -131,7 +144,7 @@ registration, account management as well as 3rd party (social) account authentic
 The database used in the project is PostgreSQL from the Heroku Platform Resources. PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
 
 ## Testing
-Due to unforseen circumstances I was able only able to test the project manually. 
+Due to unforseen circumstances I was only able to test the project manually. I tested  
 
 ## Project challenges.
 In this project I learned alot in a short time span. I was challenged and decided to take the challenge and add additional funcitonalities and styling to Code Institute's "Boutique Ado" Project. It might look very similar,however I managed to understand how to use Python as a Server Side Language, PostgreSQL and Django. The most successful achievements were connecting to AWS, adding Stripe Payment option and Deploying to Heroku.
@@ -331,7 +344,7 @@ $ python3 manage.py migrate
 1. The Design Ideas are orginally from Code Institute "Boutique Ado". 
 
 ## README Documentation Guide
-1. In order to have a good structure regarding README, I followed Developer [Oraclebun's](https://github.com/Oraclebun/ci-fullstack-project4/blob/master/README.md) guide. 
+1. In order to have a good README structure, I followed Developer [Oraclebun's](https://github.com/Oraclebun/ci-fullstack-project4/blob/master/README.md) and [Bad Gandalf](https://github.com/Bad-Gandalf/milestone-5-rick-will-fix-it/blob/master/README.md) as a guide.
 
 ## Disclaimer
 Any content but limited to such as images, information used in this project/website is purely for educational purpose.
