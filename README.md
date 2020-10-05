@@ -84,14 +84,14 @@ the edit or delete a product.
 Shopping Bag Feature(s)
 * Upon visiting the website for the first time the users will see an empty shopping bag if no products are added.
 * If the user adds products to the bag, the users will be able to see product count amount in the red badge on top to the righ of the shopping bag, when the bag is selected the user will be redirected to the SHopping Bag page.
-* There are also buttons that allow the user to increase (+) or decrease (-) the quantity of the item to purchase.
+* There are also buttons that allow the user to increase (+) or decrease (-) the quantity of the product to purchase.
 * On the bottom right the user will be able to see the Total (excluding shipping), Shipping cost/fee and Grand Total.
 
-### Shopping Bag Page
-Shopping Bag Feature(s)
-* Upon visiting the website for the first time the users will see the Favourites option at the top right.
+### Favorites Page
+Favorites Feature(s)
+* Upon visiting the website for the first time the users will see the Favorites option at the top right.
 * If the user adds products to their favorites, the users will be able to see product count amount in the red badge on top to the righ of the heart shape, when their favorites is selected the user will be redirected to the Favorites page.
-* There are also buttons that allow user to increase or decrease the quantity of the item to purchase.
+* There are also buttons that allow the user to increase (+) or decrease (-) the quantity of the product.
 * On the bottom right the user will be able to see the Total (excluding shipping), Shipping cost/fee and Grand Total.
 
 ### NavBar & Footer
