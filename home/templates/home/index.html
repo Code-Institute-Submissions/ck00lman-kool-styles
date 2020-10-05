@@ -11,11 +11,18 @@
 {% endblock %}
 
 {% block content %}
-    <div class="jumbotron bg-image">
-        <div class="container">
-            <h1>We've Got Your Kool Styles</h1>
-            <p>Browse our Store and find your next trendy Style!</p>
-            <p><a class="btn btn-black rounded-pill btn-lg" href="{% url 'products' %}" role="button">Shop Styles</a></p>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 my-auto">
+                <h2 class="display-4 logo-font text-black">
+                    View Our New Kool Styles Collection
+                </h2>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-pill text-uppercase py-3">Shop Styles</a>
+                    </h4>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
