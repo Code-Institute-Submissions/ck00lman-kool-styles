@@ -52,7 +52,7 @@ body {
     color: white !important;
 }
 
-/* Cards */
+/* Bootstrap Cards https://getbootstrap.com/docs/4.0/components/card/ */
 .card{
     border-radius: 4px;
     background: #fff;
@@ -118,6 +118,7 @@ body {
 	z-index: -1;
 }
 
+/* Logo size to fit main nav bar */
 .mylogo {
     height: 115px;
     width: 345px;
@@ -132,12 +133,12 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
-/* Products Header */
+/* Products Header Code Snipet Code Institute */
 .mt-3, .my-3 {
     margin-top: 6rem!important;
 }
 
-/* Shopping Bag Header */
+/* Shopping Bag Header Code Snipet Code Institute */
 .mb-4, .my-4 {
     margin-bottom: 1.5rem!important;
     margin-top: 6rem !important;
@@ -161,7 +162,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/*  bootstrap toasts */
+/*  bootstrap toasts https://getbootstrap.com/docs/4.0/components/toasts/*/
 
 .message-container {
     position: fixed;
@@ -223,6 +224,7 @@ input[name='q']::placeholder {
     border-bottom-color: #343a40 !important;
 }
 
+/* Shopping Bag and Favorites Product Count */
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -345,7 +347,7 @@ input[name='q']::placeholder {
     font-weight: bold;
 }
 
-/* Footer */
+/* Footer  Inspiration and code from https://codepen.io/magnusriga/pen/bKbWjx*/
 
 a {
   color: #6c757d;
@@ -445,8 +447,7 @@ footer .quick-links {
 }
 
 
-
-/* fixed top navbar only on medium and up */
+/* fixed top navbar only on medium and up CSS code snipet Code Institute */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -507,18 +508,3 @@ footer .quick-links {
         padding: .25rem .5rem !important;
     }
 }
-
-.row.fullview {
-    padding-bottom: 
-
-}
-/* Jumbotron */
-/* 
-.jumbotronStyle {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-image: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/tie_background.jpg');
-    border-radius: .3rem;
-    height: 70%;
-    filter: brightness(0.5);
-}  */
