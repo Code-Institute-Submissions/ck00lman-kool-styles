@@ -20,14 +20,14 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
+/* .logo-font {
     text-transform: uppercase;
     width: auto;
     font-size: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-}
+} */
 
 .main-logo-link {
     width: fit-content;
@@ -469,8 +469,41 @@ footer .quick-links {
         height: calc(100vh - 116px);
     }
 
-    .myProdTitle {
-    padding-top: 25px;
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-pill.btn-lg,
+    .btn.btn-black.rounded-pill.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
 }
 
 /* Jumbotron */
