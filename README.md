@@ -40,27 +40,30 @@ Staff: A staff is able to login to the [Admin Dashboard](https://kool-styles.her
 1. As a user of the ecommerce website, a user would like to be able to browse through various products.
 2. As a user, he/she should be able to query/search for products, either by sorting categories or in a search bar.
 3. As a user, he/she should be able to view product details(image, description, attributes/options, etc.) when selected. 
-4. A user should be able to add a product to the shopping cart and checkout whenever they choose to.
-5. A user should also be able to remove products from the shopping bag and/or favorites.
-6. A user should see immediately what product they have just added to their shopping bag, what they've removed, total product count and the grand total.
+4. A user should be able to add a product to the shopping bag and checkout whenever they choose to.
+5. A user should be able to add a product from their favorites whenever they choose to.
+6. A user should also be able to remove products from the shopping bag and/or favorites.
+7. A user should see immediately what product they have just added to their shopping bag, what they've removed, total product count and the grand total.
+
+### Admin/Staff eCommerce Option
+1. As a Admin/Staff of the ecommerce website, they should be able to have CRUD functionalities, from the website view for quick editing or deletion.
 
 ## Wireframes
 The wireframes for this project can be found [here](https://github.com/ck00lman/kool-styles/blob/master/wireframes.pdf).
 
 ## Kool Styles Functionalities & Features (Home Page)
-* Navigation Bar
+
+###  Navigation Bar
 - At the top of the homepage, user will find the navbar, which will facilitate navigationt of the website. User will be able to Register or Login/Logout, see their Favorites, Shopping Bag and Search for products.
-pages and also the shopping cart page.
 
 * A simplistic approach in which the user is presented a clean and modern home page. 
 - The User is greeted with a background image, welcome text and shop styles button, allowing the user to navigate to the products page.
 
-b. Features that allow users to navigate to other pages
-* At the top of the homepage, there is a navbar to allow users to navigate to Directory, Product Category and SignUp or Login/Logout
-pages and also the shopping cart page.
+Features that allow users to navigate to other pages
+* At the top of the homepage, there is a navbar to allow users to navigate to Home, All Products, Category, Register, Bag, Favorites. 
 
-c. Features that allow users to view shopping bag and favorites.
-* On the right of the navigation bar, there is a favorites and a shopping bag icon which navigates to the user's favorites or shopping cart contents.
+Features that allow users to view shopping bag and favorites.
+* On the right of the navigation bar, there is a favorites and a shopping bag icon which navigates to the user's favorites or shopping bag contents.
 
 ### Products Page
 Search Feature
