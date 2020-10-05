@@ -23,7 +23,7 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        <div class="row">
+        <div class="row fullview">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
@@ -123,6 +123,12 @@
                             </div>
                         {% endif %}
                     {% endfor %}
+                    {% if product.has_previous %}
+                    <a href="#"><i class="fas fa-chevron-left"></i>Previous Page</a>
+                    {% endif %}
+                    {% if product.has_next %}
+                    <a href="#"><i class="fas fa-chevron-right"></i>Next Page</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

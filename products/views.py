@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.core.paginator import Paginator, EmptyPage
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -65,6 +66,17 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+    
+    p = Paginator(products, 8)
+    
+    page_num = request.GET.get('page')
+
+    page = p.page(page_num)
+
+    try: 
+        page = p.page(page_num)
+    except EmptyPage:
+        page = p.page(1)
 
     context = {
         'products': products,
