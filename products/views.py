@@ -71,8 +71,6 @@ def all_products(request):
     
     page_num = request.GET.get('page')
 
-    page = p.page(page_num)
-
     try: 
         page = p.page(page_num)
     except EmptyPage:
