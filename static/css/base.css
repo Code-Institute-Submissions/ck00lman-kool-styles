@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/tie_background.jpg') no-repeat center center fixed;*/
+    background: url('https://kool-styles.s3.us-east-2.amazonaws.com/media/bghome1.png') no-repeat center center fixed;
     background-size: cover;
     min-height: 100%;
     display: flex;
